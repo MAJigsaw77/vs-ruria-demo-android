@@ -29,7 +29,9 @@ class OptionsMenu extends MusicBeatState
 				new ControlOption(controls,Control.RIGHT),
 				new ControlOption(controls,Control.RESET),
 			]),
+                        #if android
 			new StateOption("Android Controls",new android.CastomAndroidControls()),
+                        #end
 			new OptionCategory("Modifiers",[
 				new ToggleOption("failForMissing","Sudden Death"),
 			]),
