@@ -602,7 +602,7 @@ class Character extends FlxSprite
 			if(Cache.offsetData[curCharacter]!=null){
 				anims = CoolUtil.coolTextFile2(Cache.animData[curCharacter]);
 			}else{
-				var data = File.getContent("assets/shared/images/characters/"+curCharacter+"Anims.txt");
+				var data = File.getContent(SUtil.getPath() + "assets/shared/images/characters/"+curCharacter+"Anims.txt");
 				anims = CoolUtil.coolTextFile2(data);
 				Cache.animData[curCharacter] = data;
 			}
