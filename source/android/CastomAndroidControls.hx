@@ -24,7 +24,7 @@ class CastomAndroidControls extends MusicBeatState
 	var leftPozition:FlxText;
 	var rightPozition:FlxText;
 
-	var inputvari:Alphabet;
+	var inputvari:PsychAlphabet;
 
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
@@ -52,7 +52,7 @@ class CastomAndroidControls extends MusicBeatState
 		bg.screenCenter();
 		add(bg);
 
-		var titleText:Alphabet = new Alphabet(0, 0, "Android Controls", true, false, 0, 0.6);
+		var titleText:Alphabet = new PsychAlphabet(0, 0, "Android Controls", true, false, 0, 0.6);
 		titleText.x += 60;
 		titleText.y += 40;
 		titleText.alpha = 0.4;
@@ -85,7 +85,7 @@ class CastomAndroidControls extends MusicBeatState
 		savebutton.color = FlxColor.fromRGB(0,255,0);
 		add(savebutton);
 
-                inputvari = new Alphabet(0, 50, controlitems[curSelected], false, false, 0.05, 0.8);
+                inputvari = new PsychAlphabet(0, 50, controlitems[curSelected], false, false, 0.05, 0.8);
                 inputvari.screenCenter(X);
 		add(inputvari);
 
