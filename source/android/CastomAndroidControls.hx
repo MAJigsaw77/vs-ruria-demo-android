@@ -52,7 +52,7 @@ class CastomAndroidControls extends MusicBeatState
 		bg.screenCenter();
 		add(bg);
 
-		var titleText:Alphabet = new PsychAlphabet(0, 0, "Android Controls", true, false, 0, 0.6);
+		var titleText:PsychAlphabet = new PsychAlphabet(0, 0, "Android Controls", true, false, 0, 0.6);
 		titleText.x += 60;
 		titleText.y += 40;
 		titleText.alpha = 0.4;
