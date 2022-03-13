@@ -584,7 +584,7 @@ class Character extends FlxSprite
 		if(Cache.offsetData[curCharacter]!=null){
 			offsets = CoolUtil.coolTextFile2(Cache.offsetData[curCharacter]);
 		}else{
-			var data = File.getContent("assets/shared/images/characters/"+curCharacter+"Offsets.txt");
+			var data = File.getContent(SUtil.getPath() + "assets/shared/images/characters/"+curCharacter+"Offsets.txt");
 			offsets = CoolUtil.coolTextFile2(data);
 			Cache.offsetData[curCharacter] = data;
 		}
