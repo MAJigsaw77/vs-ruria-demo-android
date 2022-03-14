@@ -857,7 +857,7 @@ class PlayState extends MusicBeatState
 				i.Register(lua.state);
 
 			try {
-				lua.runFile(Paths.modchart(SONG.song.toLowerCase()));
+				lua.runFile(SUtil.getPath() + Paths.modchart(SONG.song.toLowerCase()));
 			}catch (e:Exception){
 				trace("ERROR: " + e);
 			};
