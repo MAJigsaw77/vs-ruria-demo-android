@@ -1618,13 +1618,15 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		if(snowStorm.visible){
-			blowing=true;
-			gf.playAnim('hairBlow');
-		}else if(!snowStorm.visible && blowing){
-			blowing=false;
-			gf.playAnim("hairFall");
-		}
+                if(curStage=='ruriaSnow'){
+		        if(snowStorm.visible){
+			        blowing=true;
+			        gf.playAnim('hairBlow');
+		        }else if(!snowStorm.visible && blowing){
+			        blowing=false;
+			        gf.playAnim("hairFall");
+		        }
+                }
 
 		displayedHealth = FlxMath.lerp(displayedHealth,health,.2/(openfl.Lib.current.stage.frameRate/60));
 
